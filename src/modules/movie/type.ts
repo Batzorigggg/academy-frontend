@@ -1,3 +1,6 @@
 export interface IMovie {
-    title: string;
+  title: string;
+  plot: string;
+  poster: string;
+  year: string;
 }
