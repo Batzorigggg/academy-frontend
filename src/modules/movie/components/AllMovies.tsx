@@ -1,4 +1,5 @@
 import { useGetMoviesTans } from "@/modules/movie/hooks/useGetMoviesTans";
+import { ManyMovies } from "@/components/ui/manymovies";
 
 export const AllMovies = () => {
   const { movies, loading } = useGetMoviesTans();
@@ -8,10 +9,10 @@ export const AllMovies = () => {
   }
 
   return (
-    <>
+    <div className="grid grid-cols-4 gap-4 max-w-200 mx-auto">
       {movies?.map((movie) => {
-        return <h1>{movie.title}</h1>;
+        return <ManyMovies movie={movie}></ManyMovies>;
       })}
-    </>
+    </div>
   );
 };

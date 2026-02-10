@@ -1,5 +1,5 @@
 import { usePopularMovies } from "../hooks/usePopularMovies";
-import { MovieCard } from "@/components/ui/moviecard";
+import { ManyMovies } from "@/components/ui/manymovies";
 
 export const PopularMovies = () => {
   const { movies, loading } = usePopularMovies();
@@ -9,9 +9,9 @@ export const PopularMovies = () => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-4 max-w-[800px] mx-auto">
+    <div className="grid grid-cols-4 gap-4 max-w-200 mx-auto">
       {movies?.map((movie) => {
-        return <MovieCard movie={movie}></MovieCard>;
+        return <ManyMovies movie={movie}></ManyMovies>;
       })}
     </div>
   );
