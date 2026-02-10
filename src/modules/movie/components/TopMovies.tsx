@@ -5,7 +5,7 @@ export const TopMovies = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const onClickMovie = movie => {
+  const onClickMovie = (movie) => {
     // navigate(`/movies/details/${movie._id}`);
 
     setSearchParams({ hi: "123" });
@@ -14,11 +14,11 @@ export const TopMovies = () => {
   const movies = [
     {
       title: "Titanic",
-      _id: "12312901-23"
-    }
+      _id: "12312901-23",
+    },
   ];
 
-  return movies.map(movie => {
+  return movies.map((movie) => {
     return (
       <Card
         onClick={() => {

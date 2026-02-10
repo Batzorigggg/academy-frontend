@@ -3,7 +3,7 @@ import { MainLayout } from "@/modules/app/MainLayout";
 import { Home } from "@/modules/home/components/Home";
 import { TopMovies } from "./modules/movie/components/TopMovies";
 import { PopularMovies } from "./modules/movie/components/PopularMovies";
-import { AllMovies } from "./modules/movie/components/AllMovie";
+import { AllMovies } from "./modules/movie/components/AllMovies";
 import { MovieDetails } from "./modules/movie/components/details/MovieDetails";
 
 export const AppRoutes = () => {
