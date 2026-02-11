@@ -11,7 +11,7 @@ export const ManyMovies = ({ movie }: { movie: IMovie }) => {
   console.log(movie);
   return (
     <Link to={`/movies/${movie._id}`}>
-      <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg cursor-pointer hover:scale-105 transition">
+      <div className="bg-slate-800/50 border border-slate-700/50 h-full rounded-lg cursor-pointer hover:scale-105 transition">
         <div className="w-full relative aspect-2/3">
           <img
             src={poster}
