@@ -11,15 +11,17 @@ export const AppRoutes = () => {
     <Routes>
       <Route element={<MainLayout />}>
         <Route index element={<Home />} />
+
         <Route path="movies">
           <Route index element={<Navigate to="all" replace />} />
           <Route path="top250" element={<TopMovies />} />
           <Route path="popular" element={<PopularMovies />} />
           <Route path="all" element={<AllMovies />} />
-
-          <Route path="details/:id" element={<MovieDetails />} />
+          <Route path=":id" element={<MovieDetails />} />
         </Route>
+
       </Route>
     </Routes>
   );
 };
+
