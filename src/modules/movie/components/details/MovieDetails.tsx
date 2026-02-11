@@ -17,7 +17,7 @@ export const MovieDetails = () => {
 
     const fetchMovie = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/movies/${id}`);
+        const res = await fetch(`http://localhost:3000/movie/movies/${id}`);
         if (!res.ok) throw new Error("Movie not found");
         const data: IMovie = await res.json();
         setMovie(data);
